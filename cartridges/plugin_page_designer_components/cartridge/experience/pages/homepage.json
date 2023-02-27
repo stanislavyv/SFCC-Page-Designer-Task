@@ -1,0 +1,21 @@
+{
+    "name": "Homepage",
+    "description": "A storefront homepage.",
+    "region_definitions": [
+        {
+            "id": "header",
+            "name": "Header",
+            "max_components": 1
+        },
+        {
+            "id": "main",
+            "name": "Main",
+            "max_components": 1
+        },
+        {
+            "id": "footer",
+            "name": "Footer",
+            "max_components": 1
+        }
+    ]
+}
