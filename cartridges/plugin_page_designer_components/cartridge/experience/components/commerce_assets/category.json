@@ -1,0 +1,51 @@
+{
+    "name": "Category",
+    "description": "One of three categories to displayed in category layout",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "category",
+            "name": "Category Configuration",
+            "description": "You can define the category and CTA",
+            "attribute_definitions": [
+                {
+                    "id": "categoryId",
+                    "name": "Category ID",
+                    "description": "The id of the category.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "image",
+                    "name": "Category Image",
+                    "description": "The image of the hero category.",
+                    "type": "image",
+                    "required": true
+                },
+                {
+                    "id": "categoryDescription",
+                    "name": "Category Description",
+                    "description": "The description of the category.",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "ctaTitle",
+                    "name": "Call To Action Title",
+                    "description": "The CTA title of the category.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "ctaPosition",
+                    "name": "Call To Action Position",
+                    "description": "The CTA's position in the category.",
+                    "type": "enum",
+                    "values": ["top", "bottom"],
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

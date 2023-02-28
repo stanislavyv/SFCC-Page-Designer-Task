@@ -1,0 +1,31 @@
+<isscript>
+    const assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css');
+    assets.addCss('/css/experience/components/commerceAssets/popularCategory.css');
+</isscript>
+
+<a href="${pdict.categoryLink}">
+    <figure class="my-3 image-component">
+        <picture>
+            <source srcset="${pdict.image.src.tablet}" media="(min-width: 768px)" />
+            <source srcset="${pdict.image.src.desktop}" media="(min-width: 1024px)" />
+            <img class="background-image image-fluid common-image-component common-image-filter"
+                src="${pdict.image.src.mobile}"
+                style="--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY}"
+                loading="lazy" <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}"
+            title="${pdict.image.alt}"
+            </isif>
+            />
+        </picture>
+        <figcaption
+            class="container image-heading-container d-flex flex-column justify-content-between pt-3 pb-5 <isif condition="
+            ${pdict.isCtaPositionedAtTop}">flex-column-reverse</isif>">
+            <div class="row image-heading-text text-center">
+                <p class="col-12">${pdict.categoryDescription}</p>
+            </div>
+            <div class="row image-heading-text text-center">
+                <a href="${pdict.categoryLink}" class="col-12">${pdict.ctaTitle}</a>
+            </div>
+        </figcaption>
+    </figure>
+</a>
