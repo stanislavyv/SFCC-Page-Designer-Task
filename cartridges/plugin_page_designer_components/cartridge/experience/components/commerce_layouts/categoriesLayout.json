@@ -1,0 +1,32 @@
+{
+    "name": "Categories Layout",
+    "description": "This is categories layout component of 3 row by 1 column for mobile/ tablet and 1 row by 3 columns for desktop.",
+    "group": "commerce_layouts",
+    "attribute_definition_groups": [],
+    "region_definitions": [
+        {
+            "id": "column1",
+            "name": "First Category",
+            "component_type_inclusions": [
+                { "type_id": "commerce_assets.category" }
+            ],
+            "max_components": 1
+        },
+        {
+            "id": "column2",
+            "name": "Second Category",
+            "component_type_inclusions": [
+                { "type_id": "commerce_assets.category" }
+            ],
+            "max_components": 1
+        },
+        {
+            "id": "column3",
+            "name": "Third Category",
+            "component_type_inclusions": [
+                { "type_id": "commerce_assets.category" }
+            ],
+            "max_components": 1
+        }
+    ]
+}

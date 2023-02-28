@@ -9,6 +9,14 @@
             "component_type_inclusions": [
                 { "type_id": "commerce_assets.heroBanner" }
             ]
+        },
+        {
+            "id": "categories",
+            "name": "Popular Categories",
+            "max_components": 1,
+            "component_type_inclusions": [
+                { "type_id": "commerce_layouts.categoriesLayout" }
+            ]
         }
     ]
 }

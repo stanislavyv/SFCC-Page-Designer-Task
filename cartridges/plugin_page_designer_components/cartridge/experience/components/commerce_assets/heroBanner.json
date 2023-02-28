@@ -26,7 +26,7 @@
                     "id": "shortDescription",
                     "name": "Short Description",
                     "description": "The description of the hero banner.",
-                    "type": "string",
+                    "type": "markup",
                     "required": true
                 },
                 {

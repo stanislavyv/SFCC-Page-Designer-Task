@@ -4,8 +4,6 @@ const HashMap = require("dw/util/HashMap");
 const URLUtils = require("dw/web/URLUtils");
 const ImageTransformation = require("*/cartridge/experience/utilities/ImageTransformation.js");
 
-const cacheForOneDay = require("~/cartridge/scripts/helpers/cacheForOneDay.js");
-
 /**
  * Render logic for the Hero Content asset
  * @param {dw.experience.ComponentScriptContext} context The Component script context object.
@@ -25,6 +23,7 @@ module.exports.render = function (context) {
         content.cta.getID()
     ).toString();
 
+    const cacheForOneDay = require("~/cartridge/scripts/helpers/cacheForOneDay.js");
     cacheForOneDay(response);
 
     return new Template(

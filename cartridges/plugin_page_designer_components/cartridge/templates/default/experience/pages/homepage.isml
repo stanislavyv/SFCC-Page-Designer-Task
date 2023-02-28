@@ -11,6 +11,9 @@
             <div class="row">
                 <isprint value="${pdict.regions.banner.setClassName(" col-12").render()}" encoding="off" />
             </div>
+            <div class="row">
+                <isprint value="${pdict.regions.categories.setClassName(" col-12").render()}" encoding="off" />
+            </div>
         </div>
     </div>
 </isdecorate>
