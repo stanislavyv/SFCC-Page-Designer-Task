@@ -1,8 +1,8 @@
 "use strict";
 
-var Template = require("dw/util/Template");
-var HashMap = require("dw/util/HashMap");
-var PageRenderHelper = require("*/cartridge/experience/utilities/PageRenderHelper.js");
+const Template = require("dw/util/Template");
+const HashMap = require("dw/util/HashMap");
+const PageRenderHelper = require("*/cartridge/experience/utilities/PageRenderHelper.js");
 
 /**
  * Render logic for the homepage.
@@ -13,21 +13,21 @@ var PageRenderHelper = require("*/cartridge/experience/utilities/PageRenderHelpe
  * @returns {string} The markup to be displayed
  */
 module.exports.render = function (context, modelIn) {
-    var model = modelIn || new HashMap();
+    const model = modelIn || new HashMap();
 
-    var page = context.page;
+    const page = context.page;
     model.page = page;
     model.content = context.content;
 
     model.regions = PageRenderHelper.getRegionModelRegistry(page);
 
     if (PageRenderHelper.isInEditMode()) {
-        var HookManager = require("dw/system/HookMgr");
+        const HookManager = require("dw/system/HookMgr");
         HookManager.callHook("app.experience.editmode", "editmode");
         model.resetEditPDMode = true;
     }
 
     model.CurrentPageMetaData = PageRenderHelper.getPageMetaData(page);
 
-    return new Template("experience/pages/storePage").render(model).text;
+    return new Template("experience/pages/homepage").render(model).text;
 };

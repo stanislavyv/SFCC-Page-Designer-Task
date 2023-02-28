@@ -1,0 +1,43 @@
+{
+    "name": "Hero Banner",
+    "description": "The hero section of the page",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "heroBanner",
+            "name": "Hero Configuration",
+            "description": "You can define the title, background image, short description and CTA",
+            "attribute_definitions": [
+                {
+                    "id": "title",
+                    "name": "Title",
+                    "description": "The title of the hero banner.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "image",
+                    "name": "Background Image",
+                    "description": "The background image of the hero banner.",
+                    "type": "image",
+                    "required": true
+                },
+                {
+                    "id": "shortDescription",
+                    "name": "Short Description",
+                    "description": "The description of the hero banner.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "cta",
+                    "name": "Call To Action",
+                    "description": "The CTA of the hero banner.",
+                    "type": "category",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

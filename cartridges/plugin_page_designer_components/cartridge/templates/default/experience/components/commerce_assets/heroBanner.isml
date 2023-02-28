@@ -1,0 +1,43 @@
+<isscript>
+    const assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css');
+    assets.addCss('/css/experience/components/commerceAssets/heroBanner.css');
+</isscript>
+
+<div class="mainbanner-container">
+    <a href="${pdict.cta}">
+        <div class="row">
+            <div class="col-12">
+                <figure class="mainbanner-figure image-component">
+                    <picture>
+                        <source srcset="${pdict.image.src.tablet}" media="(min-width: 768px)" />
+                        <source srcset="${pdict.image.src.desktop}" media="(min-width: 1024px)" />
+                        <img class="mainbanner-image image-fluid common-image-component common-image-filter"
+                            src="${pdict.image.src.mobile}"
+                            style="--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY}"
+                            loading="lazy" <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}"
+                        title="${pdict.image.alt}"
+                        </isif>
+                        />
+                    </picture>
+                    <figcaption class="image-heading-container d-flex flex-column justify-content-between pt-3 pb-5">
+                        <div class="image-heading-text text-center">
+                            <h2>
+                                <isprint value="${pdict.title}" encoding="off" />
+                            </h2>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="mainbanner-sub-text text-center">
+                                <p class="link-large mb-1">${pdict.description}
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <a href="${pdict.cta}" class="cta-banner-link">${Resource.msg("hero.banner.cta.link", "pageDesigner", null)}</a>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </a>
+</div>
