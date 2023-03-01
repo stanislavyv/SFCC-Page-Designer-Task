@@ -8,8 +8,9 @@
     <h3 class="text-center carousel-title">${pdict.title}</h3>
 </isif>
 
-<div id="${pdict.id}" class="carousel slide">
-    <a class="carousel-control-prev" href="${'#' + pdict.id}" role="button" data-slide="prev">
+<div id="${pdict.id}" class="carousel slide carousel-xs-2 carousel-md-3" data-keyboard="true" data-interval="false"
+    data-number-of-slides="${pdict.numberOfSlides}" data-xs="2" data-md="3">
+    <a class=" carousel-control-prev" href="${'#' + pdict.id}" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
     </a>
     <isprint value="${pdict.regions.slides.render()}" encoding="off" />

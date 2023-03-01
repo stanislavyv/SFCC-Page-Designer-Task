@@ -4,7 +4,7 @@
     assets.addCss('/css/experience/components/commerceAssets/heroBanner.css');
 </isscript>
 
-<div class="mainbanner-container">
+<div class="mainbanner-container py-3">
     <a href="${pdict.cta}">
         <div class="row">
             <div class="col-12">

@@ -11,11 +11,22 @@ const PageRenderHelper = require("*/cartridge/experience/utilities/PageRenderHel
  */
 function init(model, context) {
     model.regions = PageRenderHelper.getRegionModelRegistry(context.component);
+
+    const xsColSize = 12 / parseInt(2, 10);
+    const mdColSize = 12 / parseInt(3, 10);
+
+    const sizeExtraSmall = " col-" + xsColSize;
+    const sizeMedium = " col-md-" + mdColSize;
+
     model.regions.slides.setClassName("carousel-inner row");
-    model.regions.slides.setComponentClassName("carousel-item");
-    model.regions.slides.setComponentClassName("carousel-item active", {
-        position: 0,
-    });
+    model.regions.slides.setComponentClassName(
+        "carousel-item" + sizeExtraSmall + sizeMedium
+    );
+    model.regions.slides.setComponentClassName(
+        "carousel-item active" + sizeExtraSmall + sizeMedium,
+        { position: 0 }
+    );
+
     const numberOfSlides = model.regions.slides.region.size;
     for (let i = 0; i < numberOfSlides; i++) {
         model.regions.slides.setComponentAttribute("data-position", i, {
