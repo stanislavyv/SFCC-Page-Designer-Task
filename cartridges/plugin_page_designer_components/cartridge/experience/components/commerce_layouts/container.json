@@ -1,0 +1,58 @@
+{
+    "name": "Container",
+    "group": "commerce_layouts",
+    "attribute_definition_groups": [
+        {
+            "id": "containerConfiguration",
+            "name": "Container Configuraions",
+            "description": "Layout configuration for the container. You can set margin, padding, and width",
+            "attribute_definitions": [
+                {
+                    "id": "containerWidth",
+                    "name": "Carousel Width",
+                    "type": "enum",
+                    "values": ["full-width", "normal"],
+                    "required": true
+                },
+                {
+                    "id": "marginX",
+                    "name": "Horizontal margin",
+                    "description": "You can select one of the predefined values",
+                    "type": "enum",
+                    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                    "required": false
+                },
+                {
+                    "id": "marginY",
+                    "name": "Vertical margin",
+                    "description": "You can select one of the predefined values",
+                    "type": "enum",
+                    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                    "required": false
+                },
+                {
+                    "id": "paddingX",
+                    "name": "Horizontal padding",
+                    "description": "You can select one of the predefined values",
+                    "type": "enum",
+                    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                    "required": false
+                },
+                {
+                    "id": "paddingY",
+                    "name": "Vertical padding",
+                    "description": "You can select one of the predefined values",
+                    "type": "enum",
+                    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                    "required": false
+                }
+            ]
+        }
+    ],
+    "region_definitions": [
+        {
+            "id": "content",
+            "name": "Content"
+        }
+    ]
+}

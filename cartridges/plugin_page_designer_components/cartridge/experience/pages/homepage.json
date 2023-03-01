@@ -7,7 +7,7 @@
             "name": "Banner",
             "max_components": 1,
             "component_type_inclusions": [
-                { "type_id": "commerce_assets.heroBanner" }
+                { "type_id": "commerce_layouts.container" }
             ]
         },
         {
@@ -15,14 +15,16 @@
             "name": "Popular Categories",
             "max_components": 1,
             "component_type_inclusions": [
-                { "type_id": "commerce_layouts.categoriesLayout" }
+                { "type_id": "commerce_layouts.container" }
             ]
         },
         {
             "id": "featuredProducts",
             "name": "Featured Products",
             "max_components": 1,
-            "component_type_inclusions": []
+            "component_type_inclusions": [
+                { "type_id": "commerce_layouts.container" }
+            ]
         }
     ]
 }

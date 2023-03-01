@@ -17,9 +17,6 @@ module.exports.render = function (context, modelIn) {
 
     model = carouselBuilder.init(model, context);
 
-    const setCacheForOneDay = require("*/cartridge/scripts/helpers/setCacheForOneDay.js");
-    setCacheForOneDay(response);
-
     return new Template(
         "experience/components/commerce_layouts/featuredProductsCarousel"
     ).render(model).text;
