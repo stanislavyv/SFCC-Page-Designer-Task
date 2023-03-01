@@ -4,7 +4,7 @@
     "attribute_definition_groups": [
         {
             "id": "containerConfiguration",
-            "name": "Container Configuraions",
+            "name": "Container Configurations",
             "description": "Layout configuration for the container. You can set margin, padding, and width",
             "attribute_definitions": [
                 {

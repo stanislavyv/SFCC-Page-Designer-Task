@@ -2,7 +2,36 @@
     "name": "Categories Layout",
     "description": "This is categories layout component of 3 row by 1 column for mobile/ tablet and 1 row by 3 columns for desktop.",
     "group": "commerce_layouts",
-    "attribute_definition_groups": [],
+    "attribute_definition_groups": [
+        {
+            "id": "orderingConfiguration",
+            "name": "Positioning Configurations",
+            "description": "Positioning configuration for the layout. You can set the order of each category. Please don't assign the same position to more than one category.",
+            "attribute_definitions": [
+                {
+                    "id": "firstColumnPosition",
+                    "name": "First Column Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "secondColumnPosition",
+                    "name": "Second Column Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "thirdColumnPosition",
+                    "name": "Third Column Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                }
+            ]
+        }
+    ],
     "region_definitions": [
         {
             "id": "column1",

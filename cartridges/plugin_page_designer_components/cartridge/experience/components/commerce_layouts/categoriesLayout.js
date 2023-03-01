@@ -14,11 +14,19 @@ const PageRenderHelper = require("*/cartridge/experience/utilities/PageRenderHel
 module.exports.render = function (context, modelIn) {
     const model = modelIn || new HashMap();
     const component = context.component;
+    const content = context.content;
 
     model.regions = PageRenderHelper.getRegionModelRegistry(component);
 
-    const setCacheForOneDay = require("~/cartridge/scripts/helpers/setCacheForOneDay.js");
-    setCacheForOneDay(response);
+    model.firstColumnOrder = content.firstColumnPosition
+        ? `order-${content.firstColumnPosition}`
+        : "";
+    model.secondColumnOrder = content.secondColumnPosition
+        ? `order-${content.secondColumnPosition}`
+        : "";
+    model.thirdColumnOrder = content.thirdColumnPosition
+        ? `order-${content.thirdColumnPosition}`
+        : "";
 
     return new Template(
         "experience/components/commerce_layouts/categoriesLayout"

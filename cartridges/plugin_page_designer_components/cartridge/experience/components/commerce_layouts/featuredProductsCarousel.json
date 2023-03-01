@@ -4,7 +4,7 @@
     "attribute_definition_groups": [
         {
             "id": "carouselConfiguration",
-            "name": "Carousel Configuraions",
+            "name": "Carousel Configurations",
             "description": "Configuration for the carousel. Please put like sized items in the carousel",
             "attribute_definitions": [
                 {
