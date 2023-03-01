@@ -25,8 +25,8 @@ module.exports.render = function (context) {
     model.ctaTitle = content.ctaTitle;
     model.isCtaPositionedAtTop = content.ctaPosition === "top";
 
-    const cacheForOneDay = require("~/cartridge/scripts/helpers/cacheForOneDay.js");
-    cacheForOneDay(response);
+    const setCacheForOneDay = require("~/cartridge/scripts/helpers/setCacheForOneDay.js");
+    setCacheForOneDay(response);
 
     return new Template(
         "experience/components/commerce_assets/category"

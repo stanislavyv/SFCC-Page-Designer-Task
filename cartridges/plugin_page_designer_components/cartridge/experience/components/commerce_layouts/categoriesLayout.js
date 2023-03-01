@@ -17,8 +17,8 @@ module.exports.render = function (context, modelIn) {
 
     model.regions = PageRenderHelper.getRegionModelRegistry(component);
 
-    const cacheForOneDay = require("~/cartridge/scripts/helpers/cacheForOneDay.js");
-    cacheForOneDay(response);
+    const setCacheForOneDay = require("~/cartridge/scripts/helpers/setCacheForOneDay.js");
+    setCacheForOneDay(response);
 
     return new Template(
         "experience/components/commerce_layouts/categoriesLayout"

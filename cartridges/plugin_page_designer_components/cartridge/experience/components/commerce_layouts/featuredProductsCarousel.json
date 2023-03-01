@@ -1,0 +1,28 @@
+{
+    "name": "Featured Products Carousel",
+    "group": "commerce_layouts",
+    "attribute_definition_groups": [
+        {
+            "id": "carouselConfiguration",
+            "name": "Carousel Configuraions",
+            "description": "Configuration for the carousel. Please put like sized items in the carousel",
+            "attribute_definitions": [
+                {
+                    "id": "carouselTitle",
+                    "name": "Carousel Title",
+                    "type": "string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": [
+        {
+            "id": "slides",
+            "name": "Slides",
+            "component_type_inclusions": [
+                { "type_id": "commerce_assets.productTile" }
+            ]
+        }
+    ]
+}

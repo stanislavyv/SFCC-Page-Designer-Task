@@ -17,6 +17,14 @@
             "component_type_inclusions": [
                 { "type_id": "commerce_layouts.categoriesLayout" }
             ]
+        },
+        {
+            "id": "featuredProducts",
+            "name": "Featured Products",
+            "max_components": 1,
+            "component_type_inclusions": [
+                { "type_id": "commerce_layouts.featuredProductsCarousel" }
+            ]
         }
     ]
 }

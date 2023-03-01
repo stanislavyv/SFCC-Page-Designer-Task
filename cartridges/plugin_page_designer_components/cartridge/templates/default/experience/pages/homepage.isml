@@ -14,6 +14,9 @@
             <div class="row">
                 <isprint value="${pdict.regions.categories.setClassName(" col-12").render()}" encoding="off" />
             </div>
+            <div class="row">
+                <isprint value="${pdict.regions.featuredProducts.setClassName(" col-12").render()}" encoding="off" />
+            </div>
         </div>
     </div>
 </isdecorate>

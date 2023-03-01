@@ -23,8 +23,8 @@ module.exports.render = function (context) {
         content.cta.getID()
     ).toString();
 
-    const cacheForOneDay = require("~/cartridge/scripts/helpers/cacheForOneDay.js");
-    cacheForOneDay(response);
+    const setCacheForOneDay = require("~/cartridge/scripts/helpers/setCacheForOneDay.js");
+    setCacheForOneDay(response);
 
     return new Template(
         "experience/components/commerce_assets/heroBanner"
