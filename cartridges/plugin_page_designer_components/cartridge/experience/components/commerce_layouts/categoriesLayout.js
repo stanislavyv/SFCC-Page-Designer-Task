@@ -5,7 +5,7 @@ const HashMap = require("dw/util/HashMap");
 const PageRenderHelper = require("*/cartridge/experience/utilities/PageRenderHelper.js");
 
 /**
- * Render logic for the Instagram Post Layout
+ * Render logic for the categories layout
  * @param {dw.experience.ComponentScriptContext} context The Component script context object.
  * @param {dw.util.Map} [modelIn] Additional model values created by another cartridge. This will not be passed in by Commerce Cloud Platform.
  *
@@ -18,15 +18,32 @@ module.exports.render = function (context, modelIn) {
 
     model.regions = PageRenderHelper.getRegionModelRegistry(component);
 
-    model.firstColumnOrder = content.firstColumnPosition
-        ? `order-${content.firstColumnPosition}`
-        : "";
-    model.secondColumnOrder = content.secondColumnPosition
-        ? `order-${content.secondColumnPosition}`
-        : "";
-    model.thirdColumnOrder = content.thirdColumnPosition
-        ? `order-${content.thirdColumnPosition}`
-        : "";
+    const getColumnOrder = require("~/cartridge/experience/utilities/getColumnOrder.js");
+
+    const firstColumnOrder = getColumnOrder({
+        xs: content.firstColumnXsPosition,
+        sm: content.firstColumnSmPosition,
+        md: content.firstColumnMdPosition,
+        lg: content.firstColumnLgPosition,
+    });
+
+    const secondColumnOrder = getColumnOrder({
+        xs: content.secondColumnXsPosition,
+        sm: content.secondColumnSmPosition,
+        md: content.secondColumnMdPosition,
+        lg: content.secondColumnLgPosition,
+    });
+
+    const thirdColumnOrder = getColumnOrder({
+        xs: content.thirdColumnXsPosition,
+        sm: content.thirdColumnSmPosition,
+        md: content.thirdColumnMdPosition,
+        lg: content.thirdColumnLgPosition,
+    });
+
+    model.firstColumnOrder = firstColumnOrder;
+    model.secondColumnOrder = secondColumnOrder;
+    model.thirdColumnOrder = thirdColumnOrder;
 
     return new Template(
         "experience/components/commerce_layouts/categoriesLayout"

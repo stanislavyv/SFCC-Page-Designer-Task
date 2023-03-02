@@ -29,5 +29,8 @@ module.exports.render = function (context, modelIn) {
 
     model.CurrentPageMetaData = PageRenderHelper.getPageMetaData(page);
 
+    const setCacheForOneDay = require("~/cartridge/scripts/helpers/setCacheForOneDay.js");
+    setCacheForOneDay(response);
+
     return new Template("experience/pages/homepage").render(model).text;
 };

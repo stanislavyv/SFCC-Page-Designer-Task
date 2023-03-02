@@ -34,8 +34,8 @@ server.replace(
 
         pageMetaHelper.setPageMetaTags(req.pageMetaData, Site.current);
 
-        const page = PageMgr.getPage(pageDesignerConfig.PAGE_ID);
         const pageDesignerConfig = require("~/cartridge/pd-config");
+        const page = PageMgr.getPage(pageDesignerConfig.PAGE_ID);
 
         if (page && page.isVisible()) {
             res.page(pageDesignerConfig.PAGE_ID);

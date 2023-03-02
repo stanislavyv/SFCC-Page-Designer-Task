@@ -23,6 +23,10 @@ module.exports.render = function (context, modelIn) {
             ? "container-fluid"
             : "container";
 
+    model.backgroundColor =
+        "background-color: " +
+        (content.backgroundColor ? content.backgroundColor : "none");
+
     model.marginX = "mx-" + (content.marginX ? content.marginX : 0);
     model.marginY = "my-" + (content.marginY ? content.marginY : 0);
 

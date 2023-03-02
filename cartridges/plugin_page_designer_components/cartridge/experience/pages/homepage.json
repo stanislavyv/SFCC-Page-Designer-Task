@@ -3,25 +3,8 @@
     "description": "A storefront homepage.",
     "region_definitions": [
         {
-            "id": "banner",
-            "name": "Banner",
-            "max_components": 1,
-            "component_type_inclusions": [
-                { "type_id": "commerce_layouts.container" }
-            ]
-        },
-        {
-            "id": "categories",
-            "name": "Popular Categories",
-            "max_components": 1,
-            "component_type_inclusions": [
-                { "type_id": "commerce_layouts.container" }
-            ]
-        },
-        {
-            "id": "featuredProducts",
-            "name": "Featured Products",
-            "max_components": 1,
+            "id": "main",
+            "name": "Main",
             "component_type_inclusions": [
                 { "type_id": "commerce_layouts.container" }
             ]

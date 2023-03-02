@@ -4,27 +4,104 @@
     "group": "commerce_layouts",
     "attribute_definition_groups": [
         {
-            "id": "orderingConfiguration",
-            "name": "Positioning Configurations",
-            "description": "Positioning configuration for the layout. You can set the order of each category. Please don't assign the same position to more than one category.",
+            "id": "firstColumnOrderingConfiguration",
+            "name": "First Column Positioning Configurations",
+            "description": "Responsive positioning configuration for the first column. You can set the order for each breakpoint.",
             "attribute_definitions": [
                 {
-                    "id": "firstColumnPosition",
-                    "name": "First Column Position",
+                    "id": "firstColumnXsPosition",
+                    "name": "Extra Small Position",
                     "type": "enum",
                     "values": [1, 2, 3],
                     "required": false
                 },
                 {
-                    "id": "secondColumnPosition",
-                    "name": "Second Column Position",
+                    "id": "firstColumnSmPosition",
+                    "name": "Small Position",
                     "type": "enum",
                     "values": [1, 2, 3],
                     "required": false
                 },
                 {
-                    "id": "thirdColumnPosition",
-                    "name": "Third Column Position",
+                    "id": "firstColumnMdPosition",
+                    "name": "Medium Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "firstColumnLgPosition",
+                    "name": "Large Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": "secondColumnOrderingConfiguration",
+            "name": "Second Column Positioning Configurations",
+            "description": "Responsive positioning configuration for the second column. You can set the order for each breakpoint.",
+            "attribute_definitions": [
+                {
+                    "id": "secondColumnXsPosition",
+                    "name": "Extra Small Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "secondColumnSmPosition",
+                    "name": "Small Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "secondColumnMdPosition",
+                    "name": "Medium Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "secondColumnLgPosition",
+                    "name": "Large Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": "thirdColumnOrderingConfiguration",
+            "name": "Third Column Positioning Configurations",
+            "description": "Responsive positioning configuration for the third column. You can set the order for each breakpoint.",
+            "attribute_definitions": [
+                {
+                    "id": "thirdColumnXsPosition",
+                    "name": "Extra Small Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "thirdColumnSmPosition",
+                    "name": "Small Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "thirdColumnMdPosition",
+                    "name": "Medium Position",
+                    "type": "enum",
+                    "values": [1, 2, 3],
+                    "required": false
+                },
+                {
+                    "id": "thirdColumnLgPosition",
+                    "name": "Large Position",
                     "type": "enum",
                     "values": [1, 2, 3],
                     "required": false

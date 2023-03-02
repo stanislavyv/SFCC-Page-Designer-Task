@@ -3,10 +3,14 @@
     assets.addCss('/css/experience/components/commerceLayouts/layout.css');
 </isscript>
 
+<isset name="firstColumnOrderClasses" value="${pdict.firstColumnOrder.xs + pdict.firstColumnOrder.sm + pdict.firstColumnOrder.md + pdict.firstColumnOrder.lg}" scope="page" />
+<isset name="secondColumnOrderClasses" value="${pdict.secondColumnOrder.xs + pdict.secondColumnOrder.sm + pdict.secondColumnOrder.md + pdict.secondColumnOrder.lg}" scope="page" />
+<isset name="thirdColumnOrderClasses" value="${pdict.thirdColumnOrder.xs + pdict.thirdColumnOrder.sm + pdict.thirdColumnOrder.md + pdict.thirdColumnOrder.lg}" scope="page" />
+
 <div class="mobile-3r-1c">
     <div class="row mx-n2">
-        <isprint value="${pdict.regions.column1.setClassName(" region col-12 col-md-4" + " " + pdict.firstColumnOrder).render()}" encoding="off" />
-        <isprint value="${pdict.regions.column2.setClassName(" region col-12 col-md-4" + " " + pdict.secondColumnOrder).render()}" encoding="off" />
-        <isprint value="${pdict.regions.column3.setClassName(" region col-12 col-md-4" + " " + pdict.thirdColumnOrder).render()}" encoding="off" />
+        <isprint value="${pdict.regions.column1.setClassName(" region col-12 col-md-4" + " " + firstColumnOrderClasses).render()}" encoding="off" />
+        <isprint value="${pdict.regions.column2.setClassName(" region col-12 col-md-4" + " " + secondColumnOrderClasses).render()}" encoding="off" />
+        <isprint value="${pdict.regions.column3.setClassName(" region col-12 col-md-4" + " " + thirdColumnOrderClasses).render()}" encoding="off" />
     </div>
 </div>

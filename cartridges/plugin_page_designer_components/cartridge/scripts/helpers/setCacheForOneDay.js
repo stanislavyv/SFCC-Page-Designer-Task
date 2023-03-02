@@ -1,5 +1,5 @@
 /**
- * Sets caching for one day
+ * Sets caching for 24 hours
  * @param {dw.system.Response} response
  */
 module.exports = function (response) {

@@ -9,10 +9,29 @@
             "attribute_definitions": [
                 {
                     "id": "containerWidth",
-                    "name": "Carousel Width",
+                    "name": "Container Width",
                     "type": "enum",
                     "values": ["full-width", "normal"],
                     "required": true
+                },
+                {
+                    "id": "backgroundColor",
+                    "name": "Container Background Color",
+                    "type": "enum",
+                    "values": [
+                        "white",
+                        "black",
+                        "blue",
+                        "lightblue",
+                        "green",
+                        "red",
+                        "orange",
+                        "purple",
+                        "yellow",
+                        "gray",
+                        "lightgray"
+                    ],
+                    "required": false
                 },
                 {
                     "id": "marginX",
